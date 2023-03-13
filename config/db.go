@@ -18,7 +18,13 @@ var DBUlbimariainfo = atdb.DBInfo{
 	DBName:   "yorj7kqezy7ptwd0",
 }
 
+var DBUlbimariainfo = atdb.DBInfo(
+	DBString: MongoString,
+	DBName: "profilebe"
+)
+
 var Ulbimariaconn = atdb.MariaConnect(DBUlbimariainfo)
+var Ulbimongoconn = atdb.MariaConnect(DBUlbimongoinfo)
 
 var Usertables = [4]whatsauth.LoginInfo{mhs, dosen, user, user1}
 

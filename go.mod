@@ -1,6 +1,5 @@
 module github.com/sidiq200/app-profile
 
-
 go 1.20
 
 require (
