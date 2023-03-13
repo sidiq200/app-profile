@@ -27,3 +27,6 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 	}
 
 }
+func GetHome(c *fiber.Ctx) error{
+	return c.JSON("Hello World")
+}
