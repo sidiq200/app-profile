@@ -30,3 +30,8 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 func GetHome(c *fiber.Ctx) error{
 	return c.JSON("Hello World")
 }
+
+func GetdataFaisal(c *fiber.Ctx) error(
+	getip := faisal.GetDataAllbySal("active", config.MongoConn, "data_compllain")
+	return c.JSON(getip)
+)
