@@ -1,4 +1,4 @@
-module github.com/sidiq200/app-profile
+module github.com/sidiq200/app-profile.git
 
 go 1.20
 
