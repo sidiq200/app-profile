@@ -4,10 +4,8 @@ import (
 	"log"
 
 	"github.com/sidiq200/app-profile/config"
-
 	"github.com/aiteung/musik"
 	"github.com/gofiber/fiber/v2/middleware/cors"
-
 	"github.com/whatsauth/whatsauth"
 
 	"github.com/sidiq200/app-profile/url"
