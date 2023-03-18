@@ -36,3 +36,5 @@ func GetHome(c *fiber.Ctx) error{
 // 	getip := faisal.GetDataAllbyStatus("active", config.MongoConn, "data_compllain")
 // 	return c.JSON(getip)
 // }
+
+//uploaded
