@@ -1,4 +1,4 @@
-module github.com/sidiq200/faisal
+module github.com/sidiq200/app-profile
 
 go 1.20
 
@@ -7,7 +7,6 @@ require (
 	github.com/aiteung/musik v0.0.5
 	github.com/gofiber/fiber/v2 v2.42.0
 	github.com/gofiber/websocket/v2 v2.1.4
-	github.com/sidiq200/app-profile v0.0.0-20230318054006-86c7eb41c47c
 	github.com/whatsauth/whatsauth v0.1.89
 )
 
