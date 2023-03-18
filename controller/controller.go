@@ -28,7 +28,7 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 	}
 
 }
-func GetHome(c *fiber.Ctx) error{
+func GetdataFaisal(c *fiber.Ctx) error{
 	getip := faisal.GetIPaddress() 
 	return c.JSON(getip)
 }
