@@ -26,7 +26,7 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 		ws.Status = string(c.Request().Host())
 		return c.JSON(ws)
 	}
-
+}
 // }
 // func GetHome(c *fiber.Ctx) error{
 // 	return c.JSON("Hello World")
