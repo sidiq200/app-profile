@@ -26,8 +26,8 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 		ws.Status = string(c.Request().Host())
 		return c.JSON(ws)
 	}
+
 }
-// }
 // func GetHome(c *fiber.Ctx) error{
 // 	return c.JSON("Hello World")
 // }
@@ -36,4 +36,3 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 // 	getip := faisal.GetDataAllbyStatus("active", config.MongoConn, "data_compllain")
 // 	return c.JSON(getip)
 // }
-//upload
