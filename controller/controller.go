@@ -4,9 +4,13 @@ import (
 	
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
+	"github.com/sidiq200/faisal"
 	"github.com/whatsauth/whatsauth"
 	"github.com/sidiq200/app-profile/config"
 )
+
+var Dataser = "username"
+var Dataprof = "profil"
 
 func WsWhatsAuthQR(c *websocket.Conn) {
 	whatsauth.RunSocket(c, config.PublicKey, config.Usertables[:], config.Ulbimariaconn)
@@ -29,9 +33,17 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 
 }
 func GetdataFaisal(c *fiber.Ctx) error{
-	getip := faisal.GetIPaddress() 
-	return c.JSON(getip)
+	gedata := faisal.GetDataProfFromStatus("Active", config.MongoConn, Dataprof)
+	return c.JSON(gedata)
 }
+
+func GetdataUsername(c *fiber.Ctx) error{
+	name := c.Params("username")
+	gedata := faisal.GetDataProfFromStatus(name, config.MongoConn, Dataser)
+	return c.JSON(gedata)
+}
+
+
 
 // func GetdataFaisal(c *fiber.Ctx) error{
 // 	getip := faisal.GetDataAllbyStatus("active", config.MongoConn, "data_compllain")

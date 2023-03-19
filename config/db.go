@@ -20,12 +20,11 @@ var DBUlbimariainfo = atdb.DBInfo{
 
 var DBUlbimongoInfo = atdb.DBInfo{
 	DBString: MongoString ,
-	DBName: "faisal",
+	DBName: "profil",
 }
 
-
 var Ulbimariaconn = atdb.MariaConnect(DBUlbimariainfo)
-var Ulbimongoconn = atdb.MongoConnect(DBUlbimongoInfo)
+var MongoConn = atdb.MongoConnect(DBUlbimongoInfo)
 
 var Usertables = [4]whatsauth.LoginInfo{mhs, dosen, user, user1}
 
