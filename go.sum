@@ -107,6 +107,8 @@ github.com/sidiq200/app-profile v0.0.0-20230319233838-c8ffb79b6782 h1:/AyWV6neVj
 github.com/sidiq200/app-profile v0.0.0-20230319233838-c8ffb79b6782/go.mod h1:sdwK2U9UIWL5la05EaNykoPjkrmk/0xXWLM1+R8fgNg=
 github.com/sidiq200/faisal v0.0.3 h1:IG+PDEyuOb+5BOiTru+mnVEjFdGwqI6TA4JXPAFIIBE=
 github.com/sidiq200/faisal v0.0.3/go.mod h1:Jx3qCRP5GG3/5IhbxEWbpkwDbIQXLR+/+ZIxsrJOHWc=
+github.com/sidiq200/faisal v0.0.4 h1:nIiOFCqHFYzh6hcnGU8dh8GeudM+6mPRHxC9DogkL6E=
+github.com/sidiq200/faisal v0.0.4/go.mod h1:Jx3qCRP5GG3/5IhbxEWbpkwDbIQXLR+/+ZIxsrJOHWc=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
