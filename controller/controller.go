@@ -34,10 +34,10 @@ func PostWhatsAuthRequest(c *fiber.Ctx) error {
 
 }
 
-func GetHome(c *fiber.Ctx) error {
-	getip := musik.GetIPaddress()
-	return c.JSON(getip)
-}
+// func GetHome(c *fiber.Ctx) error {
+// 	getip := musik.GetIPaddress()
+// 	return c.JSON(getip)
+// }
 
 func GetdataFaisal(c *fiber.Ctx) error{
 	gedata := faisal.GetDataProfFromStatus("Active", config.MongoConn, Dataprof)
