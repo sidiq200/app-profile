@@ -105,6 +105,8 @@ github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee h1:8Iv5m6xEo1NR1Avp
 github.com/savsgio/gotils v0.0.0-20230208104028-c358bd845dee/go.mod h1:qwtSXrKuJh/zsFQ12yEE89xfCrGKK63Rr7ctU/uCo4g=
 github.com/sidiq200/app-profile v0.0.0-20230319233838-c8ffb79b6782 h1:/AyWV6neVjWQgd7uadx6IMK6kmHO0fdKicaZ2bEiyAk=
 github.com/sidiq200/app-profile v0.0.0-20230319233838-c8ffb79b6782/go.mod h1:sdwK2U9UIWL5la05EaNykoPjkrmk/0xXWLM1+R8fgNg=
+github.com/sidiq200/bukped_ws/Chapter03/A/1214041/backend v0.0.0-20230318084731-2211c468aaa5 h1:/6QoUzKrv+6qqau1Jz+U/EZeBp3GH1FZRr4pkO+Wg1c=
+github.com/sidiq200/bukped_ws/Chapter03/A/1214041/backend v0.0.0-20230318084731-2211c468aaa5/go.mod h1:n24++lnp7VJ5OQoKQodVwE2hAs0QJWSaR1ZfxFQYkmU=
 github.com/sidiq200/faisal v0.0.3 h1:IG+PDEyuOb+5BOiTru+mnVEjFdGwqI6TA4JXPAFIIBE=
 github.com/sidiq200/faisal v0.0.3/go.mod h1:Jx3qCRP5GG3/5IhbxEWbpkwDbIQXLR+/+ZIxsrJOHWc=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
