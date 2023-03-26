@@ -44,7 +44,7 @@ func GetdataFaisal(c *fiber.Ctx) error{
 	return c.JSON(gedata)
 }
 
-func GetdataUsername(c *fiber.Ctx) error{
+func GetProfileByUsername(c *fiber.Ctx) error{
 	name := c.Params("username")
 	gedata := faisal.GetDataProfFromStatus(name, config.MongoConn, Dataser)
 	return c.JSON(gedata)
