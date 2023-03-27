@@ -52,20 +52,22 @@ func GetProfileByUsername(c *fiber.Ctx) error{
 	return c.JSON(getdata)
 }
 
-func GetPresensiBulanIni(c *fiber.Ctx) error {
-	ps := presensi.GetPresensiCurrentMonth(config.Ulbimongoconn)
-	return c.JSON(ps)
-}
-
-// func InsertDataProfil(c *fiber.Ctx) error{
-// 	model := c.Params(faisal.DataFaisal)
-// 	Data := faisal.InsertData(config.MongoConn,
-// 			model.Username,
-// 			model.Status,
-// 			model.Biodata,
-// 	)
-// 	return c.JSON(Data)
+// func GetPresensi(c *fiber.Ctx) error {
+// 	presi := presensi.GetPresensiCurrentMonth(config.Ulbimongoconn)
+// 	return c.JSON(presi)
 // }
+
+func InsertProfile(c *fiber.Ctx) error{
+	model := c.Params(faisal.ListData)
+	Data := faisal.InsertProfile(config.MongoConn,
+			model.pendidikan,
+			model.Bio,
+			model.Username,
+			model.Checkin,
+			model.Biodata,
+	)
+	return c.JSON(Data)
+}
 
 
 
