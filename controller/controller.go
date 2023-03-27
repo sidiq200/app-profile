@@ -13,6 +13,7 @@ import (
 
 var Dataser = "username"
 var Dataprof = "profil"
+var pend = "pendidikan"
 
 func WsWhatsAuthQR(c *websocket.Conn) {
 	whatsauth.RunSocket(c, config.PublicKey, config.Usertables[:], config.Ulbimariaconn)
