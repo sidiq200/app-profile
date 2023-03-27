@@ -47,15 +47,19 @@ func GetdataFaisal(c *fiber.Ctx) error{
 
 func GetProfileByUsername(c *fiber.Ctx) error{
 	name := c.Params("username")
-	gedata := faisal.GetDataProfFromStatus(name, config.MongoConn, Dataser)
-	return c.JSON(gedata)
+	getdata := faisal.GetDataProfFromStatus(name, config.MongoConn, Dataser)
+	return c.JSON(getdata)
 }
 
-func InsertDataProfil(c *fiber.Ctx) error{
-	model := c.Params(faisal.DataFaisal)
-	Data := faisal.InsertData(name, config.MongoConn, Dataser)
-	return c.JSON(gedata)
-}
+// func InsertDataProfil(c *fiber.Ctx) error{
+// 	model := c.Params(faisal.DataFaisal)
+// 	Data := faisal.InsertData(config.MongoConn,
+// 			model.Username,
+// 			model.Status,
+// 			model.Biodata,
+// 	)
+// 	return c.JSON(Data)
+// }
 
 
 
