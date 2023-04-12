@@ -13,6 +13,6 @@ func Web(page *fiber.App) {
 	page.Get("/", controller.GetMusik) //syntax ujicoba
 	page.Get("/faisal/:username", controller.GetProfileByUsername) //username
 	page.Get("/faisal/:status", controller.GetdataFaisal) //status
-	page.Get("/presensi", controller.GetPresensi) //Presensi
+	// page.Get("/presensi", controller.GetPresensi) //Presensi
 
 }
