@@ -4,8 +4,8 @@ import (
 	
 	"github.com/aiteung/musik"//link percobaan
 
-	kmmd "github.com/gocroot/kampus/model"
-	kampus "github.com/gocroot/kampus/module"
+	// KampusOrange "github.com/gocroot/kampus/model"
+	// BlueKamp "github.com/gocroot/kampus/module"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/sidiq200/faisal"
@@ -60,37 +60,36 @@ func GetProfileByUsername(c *fiber.Ctx) error{
 // 	return c.JSON(presi)
 // }
 
-func InsertProfile(c *fiber.Ctx) error{
-	model := new(kmdd.ListData)
-	Data := kampus.InsertProfile(config.MongoConn,
-			model.Pendidikan,
-			model.Bio,
-			model.Username,
-			model.Checkin,
-			model.Biodata,
-	)
-	return c.JSON(Data)
-}
+// func InsertProfile(c *fiber.Ctx) error{
+// 	model := new(KampusOrange.ListData)
+// 	Data := BlueKamp.InsertProfile(config.MongoConn,
+// 			model.Studying,
+// 			model.Bio,
+// 			model.Username,
+// 			model.Checkin,
+// 			model.Biodata,
+// 	)
+// 	return c.JSON(Data)
+// }
 
-func InsertTanggalProfile(c *fiber.Ctx) error{
-	database := config.MongoConn
-	var jumlah kmmd.Tanggal
-	if err := c.BodyParser(&jumlah); err !=nil {
-		return err
-	}
-	Tampil := kampus.InsertTanggalProfile(database,
-			tanggalprofil
-			jumlah.Bulan,
-			jumlah.Tahun,
-			jumlah.Jumlah,
-	)
-	return c.JSON(map[string]interface{}{
-		"status":	http.StatusOk,
-		"pesan":	"Data berhasil tersimpan.",
-		"id"; Tampil,
-	})
-}
-
+// func InsertTanggalProfile(c *fiber.Ctx) error{
+// 	database := config.MongoConn
+// 	var jumlah kmmd.Tanggal
+// 	if err := c.BodyParser(&jumlah); err !=nil {
+// 		return err
+// 	}
+// 	Tampil := kampus.InsertTanggalProfile(database,
+// 			TanggalprofilU
+// 			jumlah.Bulan,
+// 			jumlah.Tahun,
+// 			jumlah.Jumlah,
+// 	)
+// 	return c.JSON(map[string]interface{}{
+// 		"status":	http.StatusOk,
+// 		"pesan":	"Data berhasil tersimpan.",
+// 		"id"; Tampil,
+// 	})
+// }
 
 
 
