@@ -28,8 +28,6 @@ github.com/fasthttp/websocket v1.5.2 h1:KdCb0EpLpdJpfE3IPA5YLK/aYBO3dhZcvwxz6tXe
 github.com/fasthttp/websocket v1.5.2/go.mod h1:S0KC1VBlx1SaXGXq7yi1wKz4jMub58qEnHQG9oHuqBw=
 github.com/go-sql-driver/mysql v1.7.0 h1:ueSltNNllEqE3qcWBTD0iQd3IpL/6U+mJxLkazJ7YPc=
 github.com/go-sql-driver/mysql v1.7.0/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
-github.com/gocroot/kampus v0.0.2 h1:4h0HYmlFbrs60YE+0swAadNTth6QLnfCACIdGUvKbEc=
-github.com/gocroot/kampus v0.0.2/go.mod h1:JcZAV6tg/2TY75idsNQeiJIr+42Aqlw3krl67M9qaOQ=
 github.com/gofiber/fiber/v2 v2.43.0 h1:yit3E4kHf178B60p5CQBa/3v+WVuziWMa/G2ZNyLJB0=
 github.com/gofiber/fiber/v2 v2.43.0/go.mod h1:mpS1ZNE5jU+u+BA4FbM+KKnUzJ4wzTK+FT2tG3tU+6I=
 github.com/gofiber/websocket/v2 v2.1.5 h1:2weAMr0Shb2ubhZ3+P4bkeWL+uCZ/NlgjSa1siEcvFM=
