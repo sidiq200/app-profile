@@ -4,6 +4,8 @@ import (
 	
 	"github.com/aiteung/musik"//link percobaan
 
+	kmmd "github.com/gocroot/kampus/model"
+	kampus "github.com/gocroot/kampus/module"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
 	"github.com/sidiq200/faisal"
@@ -14,6 +16,7 @@ import (
 var Dataser = "username"
 var Dataprof = "profil"
 var pend = "pendidikan"
+var tanggalprofil = "Tanggal"
 
 func WsWhatsAuthQR(c *websocket.Conn) {
 	whatsauth.RunSocket(c, config.PublicKey, config.Usertables[:], config.Ulbimariaconn)
@@ -58,15 +61,34 @@ func GetProfileByUsername(c *fiber.Ctx) error{
 // }
 
 func InsertProfile(c *fiber.Ctx) error{
-	model := c.Params(faisal.ListData)
-	Data := faisal.InsertProfile(config.MongoConn,
-			model.pendidikan,
+	model := new(kmdd.ListData)
+	Data := kampus.InsertProfile(config.MongoConn,
+			model.Pendidikan,
 			model.Bio,
 			model.Username,
 			model.Checkin,
 			model.Biodata,
 	)
 	return c.JSON(Data)
+}
+
+func InsertTanggalProfile(c *fiber.Ctx) error{
+	database := config.MongoConn
+	var jumlah kmmd.Tanggal
+	if err := c.BodyParser(&jumlah); err !=nil {
+		return err
+	}
+	Tampil := kampus.InsertTanggalProfile(database,
+			tanggalprofil
+			jumlah.Bulan,
+			jumlah.Tahun,
+			jumlah.Jumlah,
+	)
+	return c.JSON(map[string]interface{}{
+		"status":	http.StatusOk,
+		"pesan":	"Data berhasil tersimpan.",
+		"tampil_id"; Tampil,
+	})
 }
 
 
