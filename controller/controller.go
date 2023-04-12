@@ -87,7 +87,7 @@ func InsertTanggalProfile(c *fiber.Ctx) error{
 	return c.JSON(map[string]interface{}{
 		"status":	http.StatusOk,
 		"pesan":	"Data berhasil tersimpan.",
-		"tampil_id"; Tampil,
+		"id"; Tampil,
 	})
 }
 
